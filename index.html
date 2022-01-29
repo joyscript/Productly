@@ -8,22 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./sass/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="wrapper">
+      <div class="wrapper header__wrapper">
         <a href="#" class="logo">
           <img src="./img/logo.png" alt="Productly logo" />
         </a>
 
         <nav class="header__menu">
           <ul class="menu">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Product</li>
+            <li class="menu__item"><a href="#!" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#!" class="menu__link">Services</a></li>
+            <li class="menu__item"><a href="#!" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="#!" class="menu__link">Product</a></li>
           </ul>
         </nav>
 
@@ -36,13 +36,13 @@
 
     <main>
       <section class="promo">
-        <div class="wrapper">
+        <div class="wrapper promo__wrapper">
           <div class="promo__content">
-            <h1>The Design Thinking superpowers</h1>
-            <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+            <h1 class="promo__title">The Design Thinking superpowers</h1>
+            <p class="promo__desc">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
 
             <div class="promo__buttons">
-              <button class="button button_colored">Get started</button>
+              <button class="button button_colored button_big">Get started</button>
               <a class="link-button" href="#!">
                 <span class="ico ico_play"></span>
                 <span class="link-button__text">Watch the Video</span>

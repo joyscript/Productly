@@ -1,0 +1,30 @@
+.promo {
+  padding: 30px 0;
+}
+
+.promo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo__content {
+  padding-right: 65px;
+}
+
+.promo__title {
+  margin-bottom: 30px;
+}
+
+.promo__desc {
+  margin-bottom: 45px;
+  font-family: 'Poppins', Verdana, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.promo__buttons {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
