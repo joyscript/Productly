@@ -16,9 +16,10 @@
   margin-bottom: 30px;
 }
 
-.promo__desc {
+.promo__text {
+  max-width: 487px;
   margin-bottom: 45px;
-  font-family: 'Poppins', Verdana, sans-serif;
+  @extend %font-add;
   font-size: 1.8rem;
   line-height: 2.8rem;
 }
@@ -27,4 +28,8 @@
   display: flex;
   align-items: center;
   gap: 44px;
+
+  .button {
+    padding: 15px 40px;
+  }
 }

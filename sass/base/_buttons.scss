@@ -1,33 +1,44 @@
 .button {
   padding: 12px 25px;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  @include font(1.6rem, 2.2rem, 600);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s;
+  @extend %transition;
+
+  &_bordered {
+    color: $color-text-btn;
+    background: $color-light;
+    border: 1px solid $color-hover-btn;
+    &:hover {
+      background: $color-hover-btn;
+    }
+  }
+
+  &_colored {
+    color: $color-light;
+    background: $color-primary;
+    &:hover {
+      background: $color-active;
+    }
+  }
 }
 
-.button_bordered {
-  color: $color-text-btn;
-  background: $color-light;
-  border: 1px solid $color-hover-btn;
-}
+.link-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  @extend %font-add;
+  font-weight: 600;
+  color: $color-primary;
+  text-decoration: underline;
+  @extend %transition;
 
-.button_colored {
-  color: $color-light;
-  background: $color-primary;
-}
+  &:hover {
+    color: $color-active;
 
-.button_big {
-  padding: 15px 40px;
-}
-
-.button_bordered:hover {
-  background: $color-hover-btn;
-}
-
-.button_colored:hover {
-  background: $color-active;
+    .ico_play {
+      background: url('../img/icons/play-hov.svg') no-repeat;
+    }
+  }
 }

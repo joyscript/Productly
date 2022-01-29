@@ -1,0 +1,16 @@
+@mixin font($size, $height: $size, $weight: bold, $color: $color-title) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin cols($cols, $gap: 0px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > * {
+    flex-basis: calc((100% - $gap * ($cols - 1)) / $cols);
+  }
+}

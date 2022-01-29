@@ -1,7 +1,7 @@
 {
   "name": "productly",
   "version": "1.0.0",
-  "description": "",
+  "textription": "",
   "main": "index.js",
   "scripts": {
     "style": "sass --watch sass/style.scss sass/style.css",
@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/joyscript/Productly/issues"
   },
-  "homepage": "https://github.com/joyscript/Productly#readme"
+  "homepage": "https://github.com/joyscript/Productly#readme",
+  "dependencies": {}
 }
