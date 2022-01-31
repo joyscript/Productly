@@ -1,10 +1,9 @@
 .button {
-  padding: 12px 25px;
+  padding: 10px;
   @include font(1.6rem, 2.2rem, 600);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  @extend %transition;
 
   &_bordered {
     color: $color-text-btn;
@@ -32,7 +31,6 @@
   font-weight: 600;
   color: $color-primary;
   text-decoration: underline;
-  @extend %transition;
 
   &:hover {
     color: $color-active;

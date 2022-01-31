@@ -1,8 +1,8 @@
 .tools__wrapper {
-  padding-top: 81px;
+  padding-top: 82px;
   padding-bottom: 90px;
   background: url('../img/tools/tools-bg.svg') no-repeat center bottom;
-  background-size: 110%;
+  background-size: 103%;
 }
 
 .tools__title {
@@ -11,10 +11,21 @@
   text-align: center;
 }
 
+.tools__container {
+  @include cols(4, 50px);
+}
+
 .tools__button {
   margin-top: 60px;
   text-align: center;
+
+  .button {
+    min-width: 170px;
+    min-height: 53px;
+  }
 }
+
+// Tool block
 
 .tool__icon {
   margin-bottom: 30px;
@@ -22,4 +33,15 @@
 
 .tool__title {
   margin-bottom: 16px;
+}
+
+.tool__text {
+  max-width: 250px;
+}
+
+.tool:first-child,
+.tool:nth-child(3) {
+  .tool__text {
+    max-width: 200px;
+  }
 }

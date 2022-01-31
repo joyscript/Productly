@@ -14,16 +14,16 @@
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
-        <object type="image/svg+xml" data="./img/logo.svg" class="logo-object">
+        <object type="image/svg+xml" data="./img/logo.svg" class="logo">
           <img src="./img/logo.png" alt="Productly logo" />
         </object>
 
         <nav class="header__menu">
           <ul class="menu">
-            <li class="menu__item"><a href="#!" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="#!" class="menu__link">Services</a></li>
-            <li class="menu__item"><a href="#!" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="#!" class="menu__link">Product</a></li>
+            <li><a href="#!" class="menu__link">Home</a></li>
+            <li><a href="#!" class="menu__link">Services</a></li>
+            <li><a href="#!" class="menu__link">About</a></li>
+            <li><a href="#!" class="menu__link">Product</a></li>
           </ul>
         </nav>
 
@@ -33,7 +33,6 @@
         </div>
       </div>
     </header>
-
     <main>
       <section class="promo">
         <div class="wrapper promo__wrapper">
@@ -60,7 +59,7 @@
         <div class="wrapper tools__wrapper">
           <h2 class="tools__title">We design tools to unveil your superpowers</h2>
 
-          <div class="cols-4">
+          <div class="tools__container">
             <div class="tool">
               <div class="tool__icon">
                 <div class="icon-square icon-square_violet">
@@ -68,7 +67,7 @@
                 </div>
               </div>
               <h4 class="tool__title">First click tests</h4>
-              <p>While most people enjoy casino gambling,</p>
+              <p class="tool__text">While most people enjoy casino gambling,</p>
             </div>
 
             <div class="tool">
@@ -78,7 +77,7 @@
                 </div>
               </div>
               <h4 class="tool__title">Design surveys</h4>
-              <p>Sports betting, lottery and bingo playing for the fun</p>
+              <p class="tool__text">Sports betting, lottery and bingo playing for the fun</p>
             </div>
 
             <div class="tool">
@@ -88,7 +87,7 @@
                 </div>
               </div>
               <h4 class="tool__title">Preference tests</h4>
-              <p>The Myspace page defines the individual.</p>
+              <p class="tool__text">The Myspace page defines the individual.</p>
             </div>
 
             <div class="tool">
@@ -98,7 +97,7 @@
                 </div>
               </div>
               <h4 class="tool__title">Five second tests</h4>
-              <p>Personal choices and the overall personality of the person.</p>
+              <p class="tool__text">Personal choices and the overall personality of the person.</p>
             </div>
           </div>
 
@@ -120,7 +119,7 @@
             <span class="tag tag_bordered">Design</span>
           </div>
 
-          <div class="cols-3 strategies__cards">
+          <div class="strategies__container">
             <article class="strategy">
               <img class="strategy__img" src="./img/strategies/1.jpg" alt="strategy" />
               <div class="strategy__content">
@@ -154,8 +153,8 @@
               </div>
             </article>
 
-            <article class="strategy strategy_wide">
-              <img class="strategy__img" src="./img/strategies/4.jpg" alt="strategy" />
+            <article class="strategy">
+              <img class="strategy__img strategy__img_wide" src="./img/strategies/4.jpg" alt="strategy" />
               <div class="strategy__content">
                 <h3 class="strategy__title">Success Steps For Your Personal Or Business Life Plus Funny Image on the Back</h3>
                 <div class="strategy__tags tags">
@@ -221,32 +220,32 @@
             to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).
           </p>
 
-          <div class="cols-3 about__wrapper">
+          <div class="employee__container">
             <div class="employee">
               <div class="employee__content">
                 <h6 class="employee__name">Kathy Rosenberg</h6>
                 <p class="employee__text">Product Manager</p>
-                <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
+                <a class="employee__link" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
               </div>
-              <img src="./img/employees/1.png" alt="Kathy Rosenberg" class="employee__img" />
+              <img class="employee__img" src="./img/employees/1.png" alt="Kathy Rosenberg" />
             </div>
 
             <div class="employee">
               <div class="employee__content">
                 <h6 class="employee__name">Alexandra Boyarskaya</h6>
                 <p class="employee__text">Support Marketing Specialist</p>
-                <a href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
+                <a class="employee__link" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
               </div>
-              <img src="./img/employees/2.png" alt="Kathy Rosenberg" class="employee__img" />
+              <img class="employee__img" src="./img/employees/2.png" alt="Kathy Rosenberg" />
             </div>
 
             <div class="employee">
               <div class="employee__content">
                 <h6 class="employee__name">Melani Amini</h6>
                 <p class="employee__text">Photographer</p>
-                <a href="mailto:melania@gmail.com">melania@gmail.com</a>
+                <a class="employee__link" href="mailto:melania@gmail.com">melania@gmail.com</a>
               </div>
-              <img src="./img/employees/3.png" alt="Kathy Rosenberg" class="employee__img" />
+              <img class="employee__img" src="./img/employees/3.png" alt="Kathy Rosenberg" />
             </div>
           </div>
         </div>
@@ -256,7 +255,7 @@
         <div class="wrapper">
           <h2 class="contact__title">Contact Us</h2>
 
-          <div class="contact__cols">
+          <div class="contact__container">
             <div class="contact__content">
               <p class="contact__text">
                 Your About Us page is vital. It's often the first stop in any user's journey through a website or blog. It also shouldn't be their
@@ -266,7 +265,7 @@
               </p>
               <div class="contact__links">
                 <p><span class="ico ico_phone"></span> <a href="tel:+375111111111">+375 (22) 345-00-99</a></p>
-                <p><span class="ico ico_letter"></span> <a href="mailto:emailname@gmail.com">emailname@gmail.com</a></p>
+                <p><span class="ico ico_mail"></span> <a href="mailto:emailname@gmail.com">emailname@gmail.com</a></p>
               </div>
             </div>
 
@@ -290,10 +289,12 @@
     </main>
 
     <footer class="footer">
-      <div class="wrapper">
-        <a href="#" class="logo"><img src="./img/logo.png" alt="Productly logo" /></a>
+      <div class="wrapper footer__wrapper">
+        <object type="image/svg+xml" data="./img/logo.svg" class="logo footer__logo">
+          <img src="./img/logo.png" alt="Productly logo" />
+        </object>
 
-        <div class="cols-3 footer-menu">
+        <div class="footer-menu">
           <div class="footer-menu__column">
             <h5 class="footer-menu__title">Quick Links</h5>
             <ul class="footer-menu__list">

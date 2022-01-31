@@ -14,3 +14,9 @@
     flex-basis: calc((100% - $gap * ($cols - 1)) / $cols);
   }
 }
+
+// $gap-percent: ($gap / $content-width) * 100%;
+
+//   > * {
+//     flex-basis: calc((100% - $gap-percent * ($cols - 1)) / $cols);
+//   }

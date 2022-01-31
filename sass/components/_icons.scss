@@ -1,6 +1,5 @@
 .ico {
-  cursor: pointer;
-  @extend %transition;
+  background: transparent no-repeat center center;
 }
 
 .icon-square {
@@ -26,31 +25,45 @@
 }
 
 .ico_play {
-  background: url('../img/icons/play.svg') no-repeat;
   width: 18px;
   height: 19px;
+  background-image: url('../img/icons/play.svg');
+  @extend %transition;
+  cursor: pointer;
 }
 
 .ico_arrow {
-  background: url('../img/icons/arrow.svg') no-repeat;
   width: 12px;
   height: 17px;
+  background-image: url('../img/icons/arrow.svg');
 }
 
 .ico_snake {
-  background: url('../img/icons/snake.svg') no-repeat;
   width: 18px;
   height: 14px;
+  background-image: url('../img/icons/snake.svg');
 }
 
 .ico_heart {
-  background: url('../img/icons/heart.svg') no-repeat;
   width: 17px;
   height: 15px;
+  background-image: url('../img/icons/heart.svg');
 }
 
 .ico_clock {
-  background: url('../img/icons/clock.svg') no-repeat;
   width: 15px;
   height: 17px;
+  background-image: url('../img/icons/clock.svg');
+}
+
+.ico_phone {
+  width: 7px;
+  height: 11px;
+  background-image: url('../img/icons/phone.svg');
+}
+
+.ico_mail {
+  width: 11px;
+  height: 8px;
+  background-image: url('../img/icons/mail.svg');
 }

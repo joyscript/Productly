@@ -7,10 +7,23 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.header__menu {
+  margin-left: calc(216px / $content-width * 100% - 13px);
 }
 
 .header__buttons {
   display: flex;
   gap: 15px;
+  margin-left: auto;
+
+  .button {
+    min-height: 46px;
+    padding: 10px 26px;
+
+    &:last-child {
+      min-width: 113px;
+    }
+  }
 }

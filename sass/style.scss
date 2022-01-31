@@ -1,27 +1,26 @@
-@import 'base/normalize';
-
 // Abstracts
 @import 'abstracts/constants';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
 // Base
+@import 'base/normalize';
 @import 'base/base';
-@import 'base/logo';
-@import 'base/buttons';
-@import 'base/icons';
-@import 'base/tags';
-
-// Layouts
-@import 'layouts/wrapper';
-@import 'layouts/header';
-@import 'layouts/columns';
 
 // Components
+@import 'components/logo';
 @import 'components/menu';
-@import 'components/promo';
-@import 'components/tools';
-@import 'components/strategies';
-@import 'components/about';
-@import 'components/contact';
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/tags';
 @import 'components/form';
+
+// Layouts
+@import 'layouts/0_basic';
+@import 'layouts/1_header';
+@import 'layouts/2_promo';
+@import 'layouts/3_tools';
+@import 'layouts/4_strategies';
+@import 'layouts/5_about';
+@import 'layouts/6_contact';
+@import 'layouts/7_footer';

@@ -1,0 +1,37 @@
+.footer {
+  padding: 58px 0 52px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 150px;
+}
+
+.footer__logo {
+  width: 199px;
+}
+
+.footer-menu {
+  flex-grow: 1;
+  display: flex;
+}
+
+.footer-menu__column {
+  &:first-child {
+    margin-right: 155px;
+  }
+  &:nth-child(2) {
+    margin-right: 192px;
+  }
+}
+
+.footer-menu__title {
+  margin-bottom: 15px;
+}
+
+.footer-menu__list li {
+  @extend %font-add;
+  line-height: 3.5rem;
+}

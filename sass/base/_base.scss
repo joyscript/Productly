@@ -32,3 +32,13 @@ h5 {
 h6 {
   @include font(1.6rem, 2.6rem);
 }
+
+// -------
+a,
+button {
+  @extend %transition;
+}
+
+a:hover {
+  color: $color-primary;
+}

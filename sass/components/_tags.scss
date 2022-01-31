@@ -5,22 +5,26 @@
 }
 
 .tag {
+  height: 28px;
   padding: 0 14px;
-  @include font(1.3rem, 2.8rem, normal, $color-text);
+  font-size: 1.3rem;
   background: $color-light;
+  border: 1px solid $color-light;
   border-radius: 90px;
   cursor: pointer;
 
   &_selected {
     color: $color-light;
     background: $color-primary;
+    border-color: $color-primary;
   }
 
   &_bordered {
-    border: 1px solid $color-border;
+    border-color: $color-border;
   }
 
   &_colored {
     background: $color-tag;
+    border-color: $color-tag;
   }
 }

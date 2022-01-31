@@ -14,13 +14,24 @@
   margin-bottom: 31px;
 }
 
-.strategies__cards {
-  row-gap: 30px;
+.strategies__container {
+  @include cols(3, 34px);
+  row-gap: 31px;
 }
+
+// Strategy block
 
 .strategy {
   border-radius: 8px;
   @extend %shadow;
+}
+
+.strategy__img {
+  width: 100%;
+
+  &_wide {
+    width: auto;
+  }
 }
 
 .strategy__content {
@@ -28,9 +39,9 @@
 }
 
 .strategy__title {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .strategy__tags {
-  gap: 4px;
+  gap: 9px;
 }

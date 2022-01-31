@@ -1,0 +1,45 @@
+.contact {
+  padding: 61px 0 81px;
+  background: $color-bg;
+}
+
+.contact__container {
+  @include cols(2, 91px);
+}
+
+.contact__content {
+  flex-basis: 528px;
+}
+
+.contact__form {
+  flex-basis: 577px;
+}
+
+.contact__title {
+  margin-bottom: 17px;
+}
+
+.contact__text {
+  margin-bottom: 33px;
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+
+  .ico {
+    width: 25px;
+    height: 25px;
+    margin-right: 11px;
+    background-color: $color-light;
+    border-radius: 50%;
+  }
+}

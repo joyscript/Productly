@@ -1,0 +1,52 @@
+.about {
+  padding: 67px 0 101px;
+}
+
+.about__title {
+  margin-bottom: 14px;
+}
+
+.about__text {
+  margin-bottom: 45px;
+}
+
+.employee__container {
+  @include cols(3, 33px);
+}
+
+// Employee block
+
+.employee {
+  position: relative;
+  padding-right: 32px;
+}
+
+.employee__content {
+  padding: 36px 35px 34px;
+  border-radius: 10px;
+  @extend %shadow;
+}
+
+.employee__name {
+  line-height: 2.4rem;
+}
+
+.employee__text,
+.employee__link {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.employee__link {
+  color: $color-links;
+}
+
+.employee__img {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
