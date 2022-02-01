@@ -3,6 +3,9 @@
   @include media-lap {
     padding: 51px 0 0;
   }
+  @include media-mob {
+    padding-top: 63px;
+  }
 }
 
 .strategies__title {
@@ -10,12 +13,18 @@
   @include media-lap {
     text-align: center;
   }
+  @include media-mob {
+    margin-bottom: 15px;
+  }
 }
 
 .strategies__text {
   margin-bottom: 24px;
   @include media-lap {
     text-align: center;
+  }
+  @include media-mob {
+    margin-bottom: 22px;
   }
 }
 
@@ -25,6 +34,9 @@
     justify-content: center;
     margin-bottom: 50px;
   }
+  @include media-mob {
+    margin-bottom: 34px;
+  }
 }
 
 .strategies__container {
@@ -32,6 +44,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 31px;
+  @include media-mob {
+    justify-content: center;
+    row-gap: 21px;
+  }
 
   .strategy {
     flex-basis: calc(377px / $content-width * 100%);
@@ -43,9 +59,18 @@
     @include media-lap {
       flex-basis: calc(50% - 20px);
     }
-
     @include media-tab {
       flex-basis: calc(50% - 15px);
+    }
+    @include media-mob {
+      flex-basis: 377px;
+
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        display: none;
+      }
     }
   }
 }
@@ -72,6 +97,10 @@
     @include media-lap {
       padding-top: calc(200 / 377 * 100%);
     }
+  }
+
+  @include media-mob {
+    padding-top: calc(171 / 333 * 100%);
   }
 }
 
@@ -103,8 +132,14 @@
 
 .strategy__title {
   margin-bottom: 30px;
+  max-height: 100px;
+  overflow: hidden;
   @include media-tab {
     margin-bottom: 24px;
+  }
+  @include media-mob {
+    max-height: 68px;
+    margin-bottom: 37px;
   }
 }
 

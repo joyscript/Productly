@@ -6,6 +6,9 @@
     text-align: center;
     padding: 48px 0 50px;
   }
+  @include media-mob {
+    padding: 34px 0 49px;
+  }
 }
 
 .contact__container {
@@ -16,6 +19,9 @@
   @include media-lap {
     flex-wrap: wrap;
     gap: 53px;
+  }
+  @include media-mob {
+    gap: 41px;
   }
 }
 
@@ -38,12 +44,18 @@
 
 .contact__title {
   margin-bottom: 17px;
+  @include media-mob {
+    margin-bottom: 8px;
+  }
 }
 
 .contact__text {
   margin-bottom: 33px;
   @include media-lap {
     margin-bottom: 26px;
+  }
+  @include media-mob {
+    margin-bottom: 24px;
   }
 }
 
@@ -55,6 +67,11 @@
   line-height: 2.5rem;
   @include media-lap {
     align-items: center;
+  }
+  @include media-mob {
+    gap: 17px;
+    font-size: 2rem;
+    line-height: 2.6rem;
   }
 
   p {
@@ -68,5 +85,9 @@
     margin-right: 11px;
     background-color: $color-light;
     border-radius: 50%;
+    @include media-mob {
+      width: 19px;
+      height: 19px;
+    }
   }
 }

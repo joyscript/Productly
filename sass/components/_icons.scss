@@ -60,10 +60,16 @@
   width: 7px;
   height: 11px;
   background-image: url('../img/icons/phone.svg');
+  @include media-mob {
+    background-size: 8px;
+  }
 }
 
 .ico_mail {
   width: 11px;
   height: 8px;
   background-image: url('../img/icons/mail.svg');
+  @include media-mob {
+    background-size: 8px 5.5px;
+  }
 }

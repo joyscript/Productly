@@ -8,6 +8,10 @@
     padding-top: 78px;
     padding-bottom: 53px;
   }
+  @include media-mob {
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
 }
 
 .tools__title {
@@ -17,6 +21,9 @@
 
   @include media-lap {
     margin-bottom: 51px;
+  }
+  @include media-mob {
+    margin-bottom: 43px;
   }
 }
 
@@ -32,7 +39,24 @@
   }
 
   @include media-tab {
-    justify-content: flex-start;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  @include media-mob {
+    justify-content: center;
+    row-gap: 46px;
+    margin-bottom: 38px;
+  }
+
+  .tool {
+    @include media-lap {
+      @include fbasis(270px, 676px);
+      text-align: center;
+    }
+    @include media-mob {
+      flex-basis: 377px;
+    }
   }
 }
 
@@ -42,30 +66,30 @@
   .button {
     min-width: 170px;
     min-height: 53px;
+    @include media-mob {
+      min-width: 174px;
+    }
   }
 }
 
 // Tool block
 
-.tool {
-  @include media-lap {
-    flex-basis: 270px;
-    text-align: center;
-  }
-}
-
 .tool__icon {
   margin-bottom: 30px;
-
   @include media-lap {
     margin-bottom: 20px;
+  }
+  @include media-mob {
+    margin-bottom: 11px;
   }
 }
 
 .tool__title {
   margin-bottom: 16px;
-
   @include media-lap {
     margin-bottom: 6px;
+  }
+  @include media-mob {
+    margin-bottom: 0;
   }
 }

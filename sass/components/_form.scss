@@ -32,6 +32,10 @@
   @include media-lap {
     gap: 19px;
   }
+  @include media-mob {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .form__button {
@@ -39,10 +43,16 @@
   @include media-lap {
     margin-top: 26px;
   }
+  @include media-mob {
+    margin-top: 24px;
+  }
 
   .button {
     min-width: 117px;
     min-height: 53px;
     font-weight: 700;
+    @include media-mob {
+      min-width: 174px;
+    }
   }
 }

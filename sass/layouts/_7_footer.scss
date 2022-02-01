@@ -3,6 +3,9 @@
   @include media-lap {
     padding: 46px 0 26px;
   }
+  @include media-mob {
+    padding: 31px 0 28px;
+  }
 }
 
 .footer__wrapper {
@@ -13,10 +16,16 @@
     flex-wrap: wrap;
     gap: 34px;
   }
+  @include media-mob {
+    gap: 27px;
+  }
 }
 
 .footer__logo {
   width: 199px;
+  @include media-mob {
+    width: 129px;
+  }
 }
 
 .footer-menu {
@@ -26,6 +35,10 @@
     flex-basis: 100%;
     justify-content: space-between;
     gap: 20px;
+  }
+  @include media-mob {
+    flex-direction: column;
+    gap: 18px;
   }
 }
 
@@ -46,10 +59,16 @@
   @include media-lap {
     flex-basis: 210px;
   }
+  @include media-lap {
+    flex-basis: 100%;
+  }
 }
 
 .footer-menu__title {
   margin-bottom: 15px;
+  @include media-mob {
+    margin-bottom: 5px;
+  }
 }
 
 .footer-menu__list li {
