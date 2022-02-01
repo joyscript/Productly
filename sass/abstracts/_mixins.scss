@@ -9,14 +9,43 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: $gap;
 
   > * {
     flex-basis: calc((100% - $gap * ($cols - 1)) / $cols);
   }
 }
 
-// $gap-percent: ($gap / $content-width) * 100%;
+@mixin fbasis($card-width, $container-width: $content-width) {
+  flex-basis: calc(($card-width / $container-width) * 100%);
+}
 
-//   > * {
-//     flex-basis: calc((100% - $gap-percent * ($cols - 1)) / $cols);
-//   }
+@mixin media-lap {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-tab {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lm {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin media-mm {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

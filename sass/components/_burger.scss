@@ -1,0 +1,12 @@
+.burger {
+  display: none;
+
+  @include media-lap {
+    display: block;
+    width: 31px;
+    height: 25px;
+    margin-right: 37px;
+    background: url('../img/burger.svg') no-repeat;
+    cursor: pointer;
+  }
+}

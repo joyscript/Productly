@@ -1,5 +1,10 @@
 .about {
   padding: 67px 0 101px;
+  overflow: hidden;
+  @include media-lap {
+    padding: 49px 0 91px;
+    text-align: center;
+  }
 }
 
 .about__title {
@@ -8,21 +13,31 @@
 
 .about__text {
   margin-bottom: 45px;
+  @include media-lap {
+    margin-bottom: 37px;
+  }
 }
 
 .employee__container {
-  @include cols(3, 33px);
+  display: flex;
+  justify-content: space-between;
+  gap: 33px;
 }
 
 // Employee block
 
 .employee {
   position: relative;
+  flex-basis: 377px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   padding-right: 32px;
 }
 
 .employee__content {
-  padding: 36px 35px 34px;
+  flex-grow: 1;
+  padding: 36px 89px 34px 35px;
   border-radius: 10px;
   @extend %shadow;
 }

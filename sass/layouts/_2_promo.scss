@@ -1,19 +1,35 @@
 .promo {
   padding: 29px 0;
+
+  @include media-tab {
+    padding: 0;
+  }
 }
 
 .promo__wrapper {
   display: flex;
-  justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .promo__content {
+  flex-basis: 553px;
+  flex-shrink: 0;
   padding-top: 83px;
   padding-right: 66px;
+
+  @include media-lap {
+    flex-basis: 390px;
+    padding-top: 46px;
+    padding-right: 0px;
+  }
 }
 
 .promo__title {
   margin-bottom: 30px;
+
+  @include media-tab {
+    margin-bottom: 26px;
+  }
 }
 
 .promo__text {
@@ -33,5 +49,14 @@
     min-width: 174px;
     min-height: 53px;
     font-weight: 700;
+  }
+}
+
+.promo__img {
+  @include media-tab {
+    width: 592px;
+    height: 456px;
+    margin-top: -5px;
+    margin-left: -13px;
   }
 }

@@ -1,12 +1,18 @@
 .footer {
   padding: 58px 0 52px;
+  @include media-lap {
+    padding: 46px 0 26px;
+  }
 }
 
 .footer__wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   gap: 150px;
+  @include media-lap {
+    flex-wrap: wrap;
+    gap: 34px;
+  }
 }
 
 .footer__logo {
@@ -16,14 +22,29 @@
 .footer-menu {
   flex-grow: 1;
   display: flex;
+  @include media-lap {
+    flex-basis: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 
 .footer-menu__column {
   &:first-child {
     margin-right: 155px;
+    @include media-lap {
+      margin-right: 0;
+    }
   }
   &:nth-child(2) {
     margin-right: 192px;
+    @include media-lap {
+      margin-right: 0;
+    }
+  }
+
+  @include media-lap {
+    flex-basis: 210px;
   }
 }
 

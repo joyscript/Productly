@@ -3,20 +3,40 @@
   padding-bottom: 90px;
   background: url('../img/tools/tools-bg.svg') no-repeat center bottom;
   background-size: 103%;
+
+  @include media-lap {
+    padding-top: 78px;
+    padding-bottom: 53px;
+  }
 }
 
 .tools__title {
   max-width: 462px;
   margin: 0 auto 70px;
   text-align: center;
+
+  @include media-lap {
+    margin-bottom: 51px;
+  }
 }
 
 .tools__container {
   @include cols(4, 50px);
+  margin-bottom: 60px;
+
+  @include media-lap {
+    @include cols(2, 76px);
+    justify-content: center;
+    row-gap: 54px;
+    margin-bottom: 54px;
+  }
+
+  @include media-tab {
+    justify-content: flex-start;
+  }
 }
 
 .tools__button {
-  margin-top: 60px;
   text-align: center;
 
   .button {
@@ -27,21 +47,25 @@
 
 // Tool block
 
+.tool {
+  @include media-lap {
+    flex-basis: 270px;
+    text-align: center;
+  }
+}
+
 .tool__icon {
   margin-bottom: 30px;
+
+  @include media-lap {
+    margin-bottom: 20px;
+  }
 }
 
 .tool__title {
   margin-bottom: 16px;
-}
 
-.tool__text {
-  max-width: 250px;
-}
-
-.tool:first-child,
-.tool:nth-child(3) {
-  .tool__text {
-    max-width: 200px;
+  @include media-lap {
+    margin-bottom: 6px;
   }
 }

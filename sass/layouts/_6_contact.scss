@@ -1,18 +1,39 @@
 .contact {
   padding: 61px 0 81px;
   background: $color-bg;
+
+  @include media-lap {
+    text-align: center;
+    padding: 48px 0 50px;
+  }
 }
 
 .contact__container {
-  @include cols(2, 91px);
+  display: flex;
+  justify-content: center;
+  gap: 91px;
+
+  @include media-lap {
+    flex-wrap: wrap;
+    gap: 53px;
+  }
 }
 
 .contact__content {
   flex-basis: 528px;
+  @include media-lap {
+    flex-basis: auto;
+  }
 }
 
 .contact__form {
   flex-basis: 577px;
+  @include media-lap {
+    flex-basis: 675px;
+  }
+  @include media-tab {
+    flex-basis: 100%;
+  }
 }
 
 .contact__title {
@@ -21,6 +42,9 @@
 
 .contact__text {
   margin-bottom: 33px;
+  @include media-lap {
+    margin-bottom: 26px;
+  }
 }
 
 .contact__links {
@@ -29,6 +53,9 @@
   gap: 22px;
   font-size: 2.5rem;
   line-height: 2.5rem;
+  @include media-lap {
+    align-items: center;
+  }
 
   p {
     display: flex;

@@ -7,16 +7,33 @@
 .header__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @include media-lap {
+    padding-left: 24px;
+    justify-content: flex-start;
+  }
 }
 
 .header__menu {
-  margin-left: calc(216px / $content-width * 100% - 13px);
+  margin-right: 55px;
+
+  @include media-lap {
+    display: none;
+  }
 }
 
 .header__buttons {
   display: flex;
   gap: 15px;
-  margin-left: auto;
+
+  @include media-lap {
+    margin-left: auto;
+  }
+
+  @include media-sm {
+    display: none;
+  }
 
   .button {
     min-height: 46px;

@@ -27,11 +27,18 @@
 
 .form__line {
   @include cols(2, 16px);
+  flex-wrap: nowrap;
   margin-bottom: 18px;
+  @include media-lap {
+    gap: 19px;
+  }
 }
 
 .form__button {
   margin-top: 20px;
+  @include media-lap {
+    margin-top: 26px;
+  }
 
   .button {
     min-width: 117px;
