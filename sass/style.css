@@ -710,14 +710,12 @@ a:hover {
 
 .form__line {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
-  flex-wrap: nowrap;
   margin-bottom: 18px;
 }
-.form__line > * {
-  flex-basis: calc((100% - 16px) / 2);
+.form__line input {
+  flex-grow: 1;
 }
 @media (max-width: 1024px) {
   .form__line {
@@ -972,30 +970,21 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
   margin-bottom: 60px;
 }
 .tools__container > * {
-  flex-basis: calc((100% - 150px) / 4);
+  flex-basis: 21.7028380634%;
 }
 @media (max-width: 1024px) {
   .tools__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 76px;
     justify-content: center;
-    row-gap: 54px;
+    gap: 54px 10%;
     margin-bottom: 54px;
-  }
-  .tools__container > * {
-    flex-basis: calc((100% - 76px) / 2);
   }
 }
 @media (max-width: 768px) {
   .tools__container {
     justify-content: space-between;
-    column-gap: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -1007,13 +996,20 @@ a:hover {
 }
 @media (max-width: 1024px) {
   .tools__container .tool {
-    flex-basis: 39.9408284024%;
+    flex-basis: 45%;
+    max-width: 350px;
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .tools__container .tool {
+    max-width: 270px;
   }
 }
 @media (max-width: 600px) {
   .tools__container .tool {
-    flex-basis: 377px;
+    flex-basis: 100%;
+    max-width: 377px;
   }
 }
 
@@ -1121,14 +1117,26 @@ a:hover {
   justify-content: space-between;
   row-gap: 31px;
 }
+.strategies__container > * {
+  flex-basis: 31.469115192%;
+}
+@media (max-width: 1024px) {
+  .strategies__container {
+    justify-content: center;
+    column-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .strategies__container {
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+}
 @media (max-width: 600px) {
   .strategies__container {
     justify-content: center;
     row-gap: 21px;
   }
-}
-.strategies__container .strategy {
-  flex-basis: 31.469115192%;
 }
 .strategies__container .strategy_wide {
   flex-basis: 65.6928213689%;
@@ -1136,6 +1144,7 @@ a:hover {
 @media (max-width: 1024px) {
   .strategies__container .strategy {
     flex-basis: calc(50% - 20px);
+    max-width: 377px;
   }
 }
 @media (max-width: 768px) {
@@ -1145,7 +1154,7 @@ a:hover {
 }
 @media (max-width: 600px) {
   .strategies__container .strategy {
-    flex-basis: 377px;
+    flex-basis: 100%;
   }
   .strategies__container .strategy:nth-child(5), .strategies__container .strategy:nth-child(6), .strategies__container .strategy:nth-child(7), .strategies__container .strategy:nth-child(8) {
     display: none;

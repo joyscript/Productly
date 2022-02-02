@@ -28,19 +28,17 @@
 }
 
 .tools__container {
-  @include cols(4, 50px);
+  @include flex(260px);
   margin-bottom: 60px;
 
   @include media-lap {
-    @include cols(2, 76px);
     justify-content: center;
-    row-gap: 54px;
+    gap: 54px 10%;
     margin-bottom: 54px;
   }
 
   @include media-tab {
     justify-content: space-between;
-    column-gap: 20px;
   }
 
   @include media-mob {
@@ -51,11 +49,16 @@
 
   .tool {
     @include media-lap {
-      @include fbasis(270px, 676px);
+      flex-basis: 45%;
+      max-width: 350px;
       text-align: center;
     }
+    @include media-tab {
+      max-width: 270px;
+    }
     @include media-mob {
-      flex-basis: 377px;
+      flex-basis: 100%;
+      max-width: 377px;
     }
   }
 }

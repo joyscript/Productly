@@ -5,14 +5,13 @@
   color: $color;
 }
 
-@mixin cols($cols, $gap: 0px) {
+@mixin flex($width) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: $gap;
 
   > * {
-    flex-basis: calc((100% - $gap * ($cols - 1)) / $cols);
+    flex-basis: calc($width / $content-width * 100%);
   }
 }
 

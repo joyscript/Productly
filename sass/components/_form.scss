@@ -26,9 +26,15 @@
 }
 
 .form__line {
-  @include cols(2, 16px);
-  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
   margin-bottom: 18px;
+
+  input {
+    flex-grow: 1;
+  }
+
   @include media-lap {
     gap: 19px;
   }
