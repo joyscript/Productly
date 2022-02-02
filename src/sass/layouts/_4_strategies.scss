@@ -41,6 +41,8 @@
 
 .strategies__container {
   @include flex(377px);
+  justify-content: flex-start;
+  column-gap: calc(33.5px / $content-width * 100%);
   row-gap: 31px;
 
   @include media-lap {
@@ -59,6 +61,14 @@
   .strategy {
     &_wide {
       @include fbasis(787px);
+
+      &-active {
+        order: 1;
+      }
+    }
+
+    &_hidden {
+      display: none;
     }
 
     @include media-lap {

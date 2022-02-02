@@ -1115,6 +1115,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: flex-start;
+  column-gap: 2.796327212%;
   row-gap: 31px;
 }
 .strategies__container > * {
@@ -1140,6 +1142,12 @@ a:hover {
 }
 .strategies__container .strategy_wide {
   flex-basis: 65.6928213689%;
+}
+.strategies__container .strategy_wide-active {
+  order: 1;
+}
+.strategies__container .strategy_hidden {
+  display: none;
 }
 @media (max-width: 1024px) {
   .strategies__container .strategy {
