@@ -13,6 +13,7 @@
   border: 1px solid $color-light;
   border-radius: 90px;
   cursor: pointer;
+  @extend %transition;
 
   &_selected {
     color: $color-light;

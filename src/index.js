@@ -3,7 +3,7 @@ import { renderArticles } from './js/render-articles';
 import { addTagsClickHandler } from './js/tags-handler';
 
 window.onload = function () {
-  if(data) {
+  if (data) {
     renderArticles();
   }
   addTagsClickHandler();

@@ -7,7 +7,7 @@ export class Article {
     this.wide = wide;
   }
 
-  generateArticleHTML() {
+  generateArticle() {
     let template = '';
     let article = document.createElement('article');
     article.className = 'strategy';

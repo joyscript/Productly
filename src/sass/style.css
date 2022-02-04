@@ -1,4 +1,4 @@
-.ico_play, .logo-path, a,
+.strategy__title, .strategy, .modal__close-button, .tag, .ico_play, .logo-path, a,
 button {
   transition: all 0.3s ease-out;
 }
@@ -9,6 +9,17 @@ button {
 
 .employee__content, .strategy {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.modal::-webkit-scrollbar {
+  width: 5px;
+}
+.modal::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+}
+.modal::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 10px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -503,7 +514,7 @@ a:hover {
     width: 31px;
     height: 25px;
     margin-right: 37px;
-    background: url("../img/burger.svg") no-repeat;
+    background: url("../img/icons/burger.svg") no-repeat;
     background-size: contain;
     cursor: pointer;
   }
@@ -751,6 +762,89 @@ a:hover {
   .form__button .button {
     min-width: 174px;
   }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(80, 80, 80, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+.overlay_active {
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  width: 676px;
+  max-width: 92%;
+  max-height: 92%;
+  color: #2f281e;
+  background: #ffffff;
+  box-shadow: 0px 15px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.modal__pic {
+  position: relative;
+  width: 100%;
+  padding-top: 52.8888888889%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal__content {
+  padding: 25px 40px 40px;
+}
+
+.modal__date {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.modal__title {
+  margin-bottom: 9px;
+}
+
+.modal__text {
+  margin-bottom: 15px;
+}
+
+.modal__tags .tag {
+  cursor: default;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 23px;
+  right: 21px;
+  width: 31px;
+  height: 31px;
+  padding: 5px;
+  background: url("../img/icons/close.svg") no-repeat center center;
+  background-size: 21px 21px;
+  cursor: pointer;
+}
+.modal__close-button:hover {
+  opacity: 0.7;
+  transform: rotate(90deg) scale(1.1);
 }
 
 .wrapper {
@@ -1110,6 +1204,9 @@ a:hover {
     margin-bottom: 34px;
   }
 }
+.strategies__tags .tag_bordered:hover {
+  background: #f5f5f5;
+}
 
 .strategies__container {
   display: flex;
@@ -1173,17 +1270,24 @@ a:hover {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
+  cursor: pointer;
+}
+.strategy:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.strategy:hover .strategy__title {
+  color: #ff9900;
 }
 
 .strategy__pic {
   position: relative;
   padding-top: 53.050397878%;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .strategy__pic_wide {
   padding-top: 25.4129606099%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  overflow: hidden;
 }
 @media (max-width: 1024px) {
   .strategy__pic_wide {
@@ -1202,12 +1306,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 1024px) {
-  .strategy__img_wide {
-    width: auto;
-    left: -65%;
-  }
+  object-fit: cover;
 }
 
 .strategy__content {
