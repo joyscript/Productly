@@ -7,7 +7,7 @@ Used technologies:
 - HTML5
 - BEM layout
 - SASS
-- Responsive and alaptive layouts with media queries
+- Responsive and adaptive layouts with media queries
 - Javascript (ES6). Implemented:
   - classes Article, Modal, ArticleModal
   - function that generates and renders HTML content from data.js
