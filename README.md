@@ -1,17 +1,18 @@
 # Productly
 https://joyscript.github.io/Productly/
 
-**This is a training project.**
+## Тренировочный проект по верстке и Javascript
 
-Used technologies:
+Использованы технологии:
+- Figma
 - HTML5
-- BEM layout
 - SASS
-- Responsive and adaptive layouts with media queries
-- Javascript (ES6). Implemented:
-  - classes Article, Modal, ArticleModal
-  - function that generates and renders HTML content from data.js
-  - function that filter content by a clicked tag
-  - function that generates pop-up modal window and listens events on it
-- JS modules
+- Верстка по метологии БЭМ
+- Отзывчивая и адаптивная верстка с медиазапросами.
+- Javascript (ES6). Реализованы функции:
+  - классы Article, Modal, ArticleModal - для модальных окон и карточек,
+  - рендер карточек в секции "стратегии" на основе данных из data.js,
+  - рендер модальных окон по клику на карточку,
+  - фильтрация контента по клику на тег.
+- JS модули
 - Webpack
